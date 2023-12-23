@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Fuel Consumption App</string>
+    <string name="app_title">O seu computador de bordo no celular</string>
+    <string name="btn_access">Acessar o app</string>
 </resources>
