@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="textViewForm">
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginStart">30dp</item>
+        <item name="android:layout_marginEnd">30dp</item>
+        <item name="android:layout_marginBottom">40dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="editTextForm">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_margin">18dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="btnForm">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">18dp</item>
+    </style>
+
+</resources>
