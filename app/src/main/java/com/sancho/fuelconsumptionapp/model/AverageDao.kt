@@ -10,4 +10,7 @@ interface AverageDao {
     @Insert
     fun insert(averageCalc: AverageCalc)
 
+    @Query("SELECT * FROM AverageCalc")
+    fun getRegister() : List<AverageCalc>
+
 }
