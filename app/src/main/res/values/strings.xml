@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Fuel Consumption App</string>
+    <string name="app_title">O seu computador de bordo no celular</string>
+    <string name="btn_access">Acessar o app</string>
+    <string name="consumption_calc_desc">Insira os dados do seu abastecimento</string>
+    <string name="edit_km">Insira a quantidade de km percorrida</string>
+    <string name="edit_fuel">Insira a quantidade de litros abastecida</string>
+    <string name="btn_calculate">Calcular</string>
+    <string name="fields_message">Os campos devem ser preenchidos</string>
+    <string name="consumption_message">A média de consumo dessa viagem foi de: %1$.2f km/l</string>
+    <string name="app_message">Você abasteceu com:\n%1$s!</string>
+    <string name="ok">Ok</string>
+    <string name="save">Salvar</string>
+    <string name="select">Selecione o tipo de combustível</string>
+    <string name="db_message">Dados salvos com sucesso!</string>
+<!--    <string name="data_result">Data do abastecimento: %1$s</string>-->
+<!--    <string name="fuel_type">Tipo de combustível: %1$s.</string>-->
+<!--    <string name="average">Média de consumo: %1$.2f</string>-->
 </resources>
