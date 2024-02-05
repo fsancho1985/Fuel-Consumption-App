@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.sancho.fuelconsumptionapp.model.AverageCalc
@@ -22,22 +23,45 @@ class ConsumptionList : AppCompatActivity() {
         setContentView(R.layout.activity_consumption_list)
 
         listAverage = mutableListOf()
+        val adapter = ListAdapter(listAverage)
 
         Thread {
             val app = application as App
             val dao = app.db.averageDao()
             val response = dao.getRegister()
 
-            runOnUiThread { listAverage.addAll(response) }
+            runOnUiThread { listAverage.addAll(response)
+                adapter.notifyDataSetChanged()
+            }
         }.start()
 
-        val adapter = ListAdapter(listAverage)
+
 
         rv_list_consumption = findViewById(R.id.rv_consumption_list)
         rv_list_consumption.adapter = adapter
         rv_list_consumption.layoutManager = LinearLayoutManager(this)
 
     }
+//    fun onLongClick(position: Int, averageCalc: AverageCalc) {
+//        AlertDialog.Builder(this).setMessage(getString(R.string.delete_message))
+//            .setNegativeButton(android.R.string.cancel) {
+//                dialog, which ->
+//            }.setPositiveButton(android.R.string.ok) { dialog, which ->
+//                Thread {
+//                    val app = application as App
+//                    val dao = app.db.averageDao()
+//
+//                    val response = dao.delete(averageCalc)
+//
+//                    if (response > 0) {
+//                        runOnUiThread {
+//                            listAverage.removeAt(position)
+//                            adapter.notifyDataSetChanged()
+//                        }
+//                    }
+//                }.start()
+//            }.create().show()
+//    }
 
     private inner class ListAdapter(
         private val listAverage: List<AverageCalc>

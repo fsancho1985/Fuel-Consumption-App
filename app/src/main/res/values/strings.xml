@@ -13,7 +13,8 @@
     <string name="save">Salvar</string>
     <string name="select">Selecione o tipo de combustível</string>
     <string name="db_message">Dados salvos com sucesso!</string>
-<!--    <string name="data_result">Data do abastecimento: %1$s</string>-->
+    <string name="delete_message">Você realmente deseja excluir este registro?</string>
+    <!--    <string name="data_result">Data do abastecimento: %1$s</string>-->
 <!--    <string name="fuel_type">Tipo de combustível: %1$s.</string>-->
 <!--    <string name="average">Média de consumo: %1$.2f</string>-->
 </resources>
